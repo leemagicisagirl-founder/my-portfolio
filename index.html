@@ -4,7 +4,7 @@
   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>李孟昕 | Content Creator & Brand Marketing</title>
+<title>李孟昕 | Content × Product × AI</title>
 <!-- 字体引入：Lora（衬线标题）+ Noto Serif SC（中文衬线）+ Inter（正文）+ Noto Sans SC（中文正文） -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,47 +88,6 @@ section{padding:96px 0 80px;border-bottom:1px solid var(--border);}
 .section-title{
   font-family:"Lora","Noto Serif SC","Songti SC",serif;
   font-size:2rem;font-weight:600;letter-spacing:-.006em;line-height:1.25;
-}
-/* ---- 站点技术架构提示卡 ---- */
-.site-tech-badge {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 18px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  margin-bottom: 30px;
-  font-size: 0.82rem;
-  color: var(--text-dim);
-  transition: var(--transition);
-}
-.site-tech-badge:hover {
-  border-color: var(--accent);
-}
-.site-tech-badge .code-tag {
-  color: var(--accent);
-  font-family: monospace;
-  font-weight: 550;
-}
-.site-tech-badge .divider {
-  display: inline-block;
-  width: 1px;
-  height: 12px;
-  background: var(--border);
-}
-.site-tech-badge .dot {
-  color: var(--border);
-}
-.site-tech-badge .vibe-tag {
-  color: var(--accent);
-  background: var(--accent-light);
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-family: monospace;
-  font-size: 0.76rem;
-  font-weight: 500;
 }
 /* ---- 沉浸式灯箱 (Lightbox) ---- */
 .lightbox-modal {
@@ -285,6 +244,70 @@ section{padding:96px 0 80px;border-bottom:1px solid var(--border);}
 .strategy-card p{font-size:.8rem;color:var(--text-dim);line-height:1.55;margin:0;}
 .strategy-card .val{font-size:.8rem;color:var(--text);line-height:1.55;margin-top:auto;}
 
+/* ---- Lens Notes featured case ---- */
+.lens-case{background:#EEF1EA;}
+.lens-intro{display:grid;grid-template-columns:1.35fr .65fr;gap:48px;align-items:end;margin-bottom:42px;}
+.lens-description{font-size:1rem;color:var(--text-dim);line-height:1.8;max-width:730px;}
+.lens-live-heading{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;}
+.lens-live-cta{display:inline-flex;align-items:center;min-height:38px;padding:8px 14px;border-radius:5px;background:var(--accent);border:1px solid var(--accent);color:#fff;font-size:.8rem;font-weight:550;text-decoration:none;transition:var(--transition);}
+.lens-live-cta:hover{background:var(--accent-hover);border-color:var(--accent-hover);}
+.lens-live-domain{font-size:.76rem;color:var(--text-dim);letter-spacing:.03em;}
+.lens-live-footer{margin-top:28px;font-size:.82rem;}
+.lens-live-footer a{color:var(--accent);font-weight:550;text-decoration:none;border-bottom:1px solid rgba(47,107,79,.35);padding-bottom:2px;}
+.lens-live-footer a:hover{border-bottom-color:var(--accent);}
+.lens-prompt{font-family:"Lora","Noto Serif SC","Songti SC",serif;font-size:1.4rem;line-height:1.45;color:var(--accent);border-left:2px solid var(--accent);padding-left:18px;}
+.lens-stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px;}
+.lens-stat{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:22px 18px;min-height:120px;}
+.lens-stat .num{display:block;font-size:1.7rem;font-weight:600;line-height:1.1;color:var(--accent);font-feature-settings:"tnum";font-variant-numeric:tabular-nums;}
+.lens-stat .lbl{display:block;font-size:.78rem;color:var(--text-dim);margin-top:9px;line-height:1.45;}
+.lens-inventory{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:46px;}
+.lens-inventory span{font-size:.78rem;background:var(--accent-light);color:var(--accent);padding:7px 10px;border-radius:4px;}
+.lens-screens{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(210px,.65fr);gap:18px;align-items:start;margin:0 0 48px;}
+.lens-shot{appearance:none;display:block;width:100%;padding:0;border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--card);cursor:zoom-in;text-align:left;color:var(--text);transition:var(--transition);}
+.lens-shot:hover{border-color:var(--accent);transform:translateY(-2px);}
+.lens-shot-crop{display:block;overflow:hidden;background:#dfe7df;}
+.lens-shot-main .lens-shot-crop{height:620px;}
+.lens-shot-crop img{display:block;width:100%;height:auto;}
+.lens-shot-main .lens-shot-crop img{transform:translateY(0);}
+.lens-shot-caption{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:11px 13px;font-size:.76rem;color:var(--text-dim);}
+.lens-shot-caption b{font-weight:550;color:var(--text);}
+.lens-shot-caption span{font-size:.7rem;color:var(--accent);}
+.lens-shot-stack{display:flex;flex-direction:column;gap:16px;padding-top:28px;}
+.lens-shot-stack .lens-shot-crop{height:178px;}
+.lens-shot-stack .lens-shot:nth-child(2){margin-left:34px;width:calc(100% - 34px);}
+.lens-shot-stack .lens-shot:nth-child(2) .lens-shot-crop{height:198px;}
+.lens-shot-stack .lens-shot:nth-child(3){margin-left:14px;width:calc(100% - 14px);}
+.lens-shot-stack .lens-shot:nth-child(3) .lens-shot-crop{height:168px;}
+.lens-story-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.lens-story{background:rgba(255,255,255,.66);border:1px solid var(--border);border-radius:6px;padding:24px;}
+.lens-story .eyebrow{display:block;color:var(--accent);font-size:.7rem;font-weight:600;letter-spacing:.12em;margin-bottom:10px;}
+.lens-story h3{font-size:1rem;font-weight:600;margin-bottom:9px;}
+.lens-story p,.lens-story ul{font-size:.86rem;color:var(--text-dim);line-height:1.7;}
+.lens-story ul{padding-left:18px;}
+.content-product-note{background:var(--accent-light);border-left:3px solid var(--accent);padding:19px 22px;margin:0 0 42px;color:var(--text-dim);font-size:.9rem;line-height:1.7;}
+.content-product-note strong{color:var(--accent);}
+
+/* ---- Second-pass hierarchy: two featured cases ---- */
+.hero-grid{grid-template-columns:1.45fr .65fr;gap:72px;}.hero-content h1{margin-bottom:18px;}.hero-name{display:block;font-size:.5em;font-weight:500;letter-spacing:.08em;color:var(--text-dim);margin-bottom:10px;}.hero-focus{display:block;font-size:1.22em;letter-spacing:-.025em;color:var(--accent);}.hero-subtitle{font-size:1.14rem;max-width:520px;}.hero-visual{opacity:.84;}.avatar-container{width:258px;height:326px;}
+.featured-case{padding:116px 0 104px;}.featured-case .section-header{margin-bottom:48px;}.featured-case .section-title,.featured-case .case-study-title{font-size:2.65rem;line-height:1.18;}.featured-case .section-tag,.featured-case .case-study-tag{font-size:.74rem;letter-spacing:.16em;}.content-case{background:#F8F8F8;}
+.lens-stat-grid{gap:0;margin:40px 0 48px;border-top:1px solid rgba(47,107,79,.25);border-bottom:1px solid rgba(47,107,79,.25);}.lens-stat{background:transparent;border:0;border-radius:0;padding:24px 26px;min-height:0;}.lens-stat+.lens-stat{border-left:1px solid rgba(47,107,79,.25);}.lens-stat .num{font-family:"Lora","Noto Serif SC","Songti SC",serif;font-size:clamp(2.35rem,4vw,3.55rem);letter-spacing:-.04em;}.lens-stat .lbl{font-size:.86rem;margin-top:10px;}.lens-screens{margin-bottom:18px;}.lens-card-tool-feature{width:min(470px,54%);margin:0 4% 56px auto;}.lens-card-tool-feature .lens-shot-crop{height:255px;}
+.lens-product-visual{display:grid;grid-template-columns:minmax(0,.9fr) minmax(330px,1.1fr);gap:clamp(28px,5vw,64px);align-items:center;margin:0 0 56px;}
+.lens-product-overview{width:clamp(280px,34vw,400px);max-width:100%;justify-self:center;margin:0;}
+.lens-product-image-button,.lens-mechanism-image{display:block;padding:0;border:0;background:transparent;cursor:zoom-in;text-align:left;}
+.lens-product-image-button img,.lens-mechanism-image img{display:block;width:100%;height:auto;}
+.lens-product-image-button{width:100%;}
+.lens-product-overview figcaption{margin-top:14px;max-width:420px;}
+.lens-product-overview figcaption span,.lens-mechanism span{display:block;font-size:.7rem;font-weight:600;letter-spacing:.13em;color:var(--accent);margin-bottom:8px;}
+.lens-product-overview figcaption p{font-size:.9rem;line-height:1.7;color:var(--text-dim);}
+.lens-mechanisms{display:flex;flex-direction:column;border-top:1px solid var(--border);}
+.lens-mechanism{display:grid;grid-template-columns:164px minmax(0,1fr);gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--border);}
+.lens-mechanism-image{width:164px;}
+.lens-mechanism p{font-size:.86rem;line-height:1.7;color:var(--text-dim);}
+.lens-process{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:10px;}.lens-process-step{padding:25px 18px 28px;min-height:210px;}.lens-process-step+.lens-process-step{border-left:1px solid var(--border);}.lens-process-index{display:block;font-family:"Lora","Noto Serif SC",serif;font-size:1.35rem;color:var(--accent);line-height:1;margin-bottom:8px;}.lens-process-label{display:block;font-size:.7rem;font-weight:600;letter-spacing:.13em;color:var(--accent);margin-bottom:12px;}.lens-process-step p{font-size:.83rem;line-height:1.7;color:var(--text-dim);}.lens-inventory-secondary{margin:20px 0 0;opacity:.82;}
+.content-case .growth-overview{gap:0;margin:40px 0 52px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}.content-case .growth-stat{background:transparent;border:0;border-radius:0;padding:25px 20px;}.content-case .growth-stat+.growth-stat{border-left:1px solid var(--border);}.content-case .growth-stat .num{font-family:"Lora","Noto Serif SC",serif;font-size:clamp(2.2rem,3.4vw,3.2rem);letter-spacing:-.035em;}.content-case .growth-stat .lbl{font-size:.82rem;}.content-case .strategy-grid{margin-bottom:46px;}.content-case .strategy-card{padding:18px;background:rgba(255,255,255,.7);}.content-case .section-header{margin-bottom:28px !important;}#content > .container > .section-header{margin-bottom:48px !important;}.representative-grid{margin:14px 0 44px;}
+.content-commercial-note{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;padding:22px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:28px;}.content-commercial-note .case-study-tag{width:100%;margin-bottom:0;}.content-commercial-note p{max-width:680px;font-size:.88rem;color:var(--text-dim);line-height:1.65;}.content-commercial-note a{font-size:.82rem;font-weight:550;color:var(--accent);text-decoration:none;white-space:nowrap;}.content-product-note{margin:0;padding:22px 0;background:transparent;border-left:0;border-top:2px solid var(--accent);}
+.support-section{padding:70px 0 62px;}.support-section .section-header{margin-bottom:30px;}.support-section .section-title{font-size:1.6rem;}.support-section .projects-grid{margin-bottom:20px;}.support-section .project-card{padding:21px;}.support-section .collab-card{padding:16px;}.support-section .collab-icon{font-size:1.45rem;margin-bottom:7px;}.support-section .logo-marquee-wrapper{padding:8px 0 22px;}.support-section .photo-grid{gap:12px;}.support-section .timeline-item{margin-bottom:30px;}.support-section .contact-content h2{font-size:1.8rem;}
+
 .featured-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:20px 0 52px;}
 .featured-card{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden;transition:var(--transition);display:flex;flex-direction:column;}
 .featured-card:hover{border-color:var(--accent);}
@@ -388,8 +411,23 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:36px 0;te
 footer p{font-size:.76rem;color:var(--text-dim);}
 
 /* ---- Responsive ---- */
+@media (max-width:1100px){
+  .nav-menu{gap:15px;}
+  .nav-menu a{font-size:.76rem;}
+}
 @media (max-width:900px){
-  .hero-grid,.about-grid{grid-template-columns:1fr;gap:40px;}
+  .nav-menu{gap:10px;}
+  .nav-menu a{font-size:.72rem;}
+  .nav-social{gap:4px;margin-left:5px;padding-left:8px;}
+  .nav-social a{padding:3px 7px;}
+  .hero-grid,.about-grid,.lens-intro{grid-template-columns:1fr;gap:40px;}
+  .lens-product-visual{grid-template-columns:minmax(250px,.86fr) minmax(300px,1.14fr);gap:28px;}
+  .lens-product-overview{width:min(100%,360px);}
+  .lens-mechanism{grid-template-columns:148px minmax(0,1fr);gap:16px;}
+  .lens-mechanism-image{width:148px;}
+  .lens-process{grid-template-columns:repeat(2,1fr);}
+  .lens-process-step:nth-child(3){border-left:0;}
+  .lens-process-step:nth-child(n+3){border-top:1px solid var(--border);}
   .hero-visual{order:-1;}
   .growth-overview{grid-template-columns:repeat(2,1fr);}
   .strategy-grid{grid-template-columns:repeat(2,1fr);}
@@ -404,6 +442,27 @@ footer p{font-size:.76rem;color:var(--text-dim);}
   .featured-grid{grid-template-columns:1fr;}
   .avatar-container{width:100%;max-width:260px;height:340px;}
   .lang-switch{margin-left:0;padding-left:0;border-left:none;}
+  .lens-stat-grid,.lens-story-grid,.lens-screens,.lens-process{grid-template-columns:1fr;}
+  .lens-stat{min-height:auto;padding:20px 0;}
+  .lens-stat+.lens-stat{border-left:0;border-top:1px solid rgba(47,107,79,.25);}
+  .lens-process-step,.lens-process-step+.lens-process-step{min-height:0;border-left:0;border-top:1px solid var(--border);}
+  .lens-process-step:first-child{border-top:0;}
+  .lens-card-tool-feature{width:100%;margin:0 0 38px;}
+  .lens-card-tool-feature .lens-shot-crop{height:300px;}
+  .lens-product-visual{grid-template-columns:1fr;gap:30px;margin-bottom:42px;}
+  .lens-product-overview{width:min(100%,320px);justify-self:start;}
+  .lens-product-overview figcaption{margin-top:12px;}
+  .lens-mechanism{grid-template-columns:116px minmax(0,1fr);gap:16px;padding:16px 0;}
+  .lens-mechanism-image{width:116px;}
+  .lens-mechanism p{font-size:.82rem;line-height:1.65;}
+  .featured-case{padding:82px 0 70px;}
+  .featured-case .section-title,.featured-case .case-study-title{font-size:2.05rem;}
+  .content-case .growth-stat{padding:20px 0;}
+  .content-case .growth-stat+.growth-stat{border-left:0;border-top:1px solid var(--border);}
+  .lens-shot-main .lens-shot-crop{height:480px;}
+  .lens-shot-stack{padding-top:0;}
+  .lens-shot-stack .lens-shot,.lens-shot-stack .lens-shot:nth-child(2),.lens-shot-stack .lens-shot:nth-child(3){margin-left:0;width:100%;}
+  .lens-shot-stack .lens-shot-crop,.lens-shot-stack .lens-shot:nth-child(2) .lens-shot-crop,.lens-shot-stack .lens-shot:nth-child(3) .lens-shot-crop{height:360px;}
 }
 /* ---- 首屏按钮组：两两风格统一 ---- */
 .hero-actions {
@@ -472,18 +531,15 @@ footer p{font-size:.76rem;color:var(--text-dim);}
 <body>
 
 <header>
-  <!-- 全站顶部技术架构说明条 -->
-<div style="background: var(--card); border-bottom: 1px solid var(--border); padding: 8px 0; text-align: center; font-size: 0.78rem; color: var(--text-dim); letter-spacing: 0.03em;">
-  <span>// 站点架构</span> &nbsp;·&nbsp; 基于 <strong>VS Code</strong> 与 <strong>CSS</strong> 独立构建 &nbsp;·&nbsp; <span style="color: var(--accent); background: var(--accent-light); padding: 1px 6px; border-radius: 4px; font-family: monospace;">Vibe Coding 驱动</span>
-</div>
   <div class="container nav-inner">
     <a href="#home" class="nav-logo">LI MENGXIN</a>
     <div class="nav-right">
 <ul class="nav-menu">
   <li><a href="#home" class="active">首页</a></li>
   <li><a href="#about">关于我</a></li>
-  <li><a href="#projects">项目与交付</a></li>
+  <li><a href="#lens-notes">Lens Notes</a></li>
   <li><a href="#content">内容增长</a></li>
+  <li><a href="#projects">项目</a></li>
   <li><a href="#collab">品牌合作</a></li>
   <li><a href="#photography">摄影作品</a></li>
   <li><a href="#journey">个人经历</a></li>
@@ -506,15 +562,13 @@ footer p{font-size:.76rem;color:var(--text-dim);}
   <div class="container">
     <div class="hero-grid">
       <div class="hero-content">
-        <h1>李孟昕<br>Growth, Content & FDE</h1>
-     <div class="hero-subtitle">内容营销 / 数字增长 / FDE 技术交付</div>
-        <p class="hero-quote">“以内容驱动增长，用技术与协作链接业务价值。<br>Driving growth through compelling content, bridging business and tech with collaboration.”</p>
+        <h1><span class="hero-name">李孟昕</span><span class="hero-focus">Content × Product × AI</span></h1>
+     <div class="hero-subtitle">从内容洞察到产品落地与用户增长</div>
+        <p class="hero-quote">围绕真实用户问题，将内容、产品、AI 工具与数据反馈连接起来。</p>
 
         <div class="hero-actions">
-  <a href="#projects" class="btn btn-primary">查看项目交付</a>
-  <a href="#content" class="btn btn-outline">查看数字增长</a>
-  <a href="https://www.xiaohongshu.com/user/profile/69ae93fb000000003302700b?m_source=pwa" target="_blank" class="btn btn-social">🔴 小红书</a>
-  <a href="https://v.douyin.com/vEgL9KkNuYE/" target="_blank" class="btn btn-social">🎵 抖音</a>
+  <a href="#lens-notes" class="btn btn-primary">查看 Lens Notes</a>
+  <a href="#content" class="btn btn-outline">查看清禾在野</a>
 </div>
       </div>
       <div class="hero-visual">
@@ -530,47 +584,140 @@ footer p{font-size:.76rem;color:var(--text-dim);}
   <div class="container">
     <div class="section-header">
       <span class="section-tag">About Me</span>
-      <h2 class="section-title">内容营销 × 数字增长 × 技术协同</h2>
+      <h2 class="section-title">内容、产品与视觉创作</h2>
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>我毕业于天津外国语大学（本科）与深圳大学（现代教育技术硕士），拥有扎实的教育技术与数字媒体复合背景，具备出色的英语工作沟通能力及敏锐的跨文化内容传播意识。</p>
-        <p>作为一名复合型内容与增长实践者，我擅长将宏观策略与工程化落地相结合。从自媒体账号的 0 到 1 爆发增长，到复杂业务场景下的跨团队协同与产品交付，我能够独立驾驭需求拆解、内容驱动、数据复盘到系统落地的全链路闭环。</p>
-        <p>同时，我深度拥抱 AI 辅助工程与前沿工具链（如 Vibe Coding、大语言模型等），持续探索技术与业务场景交汇的最优解。</p>
+        <p>我的工作横跨内容、产品与视觉创作。</p>
+        <p>过去一年，我从零运营摄影内容账号，并从内容与社群中的真实需求出发，独立设计、构建并持续迭代 Lens Notes。</p>
+        <p>我习惯从用户问题出发，通过内容验证需求，再结合 AI 工具、数据和快速原型将想法落地。</p>
       </div>
       <div class="identity-cards">
-        <div class="identity-card"><h4>内容策略与增长</h4><p>擅长多平台矩阵运营、爆款选题与全链路数据增长</p></div>
-        <div class="identity-card"><h4>技术协同与交付</h4><p>具备极强的动手落地能力，熟练应用 AI 赋能全栈交付</p></div>
-        <div class="identity-card"><h4>全球化视野</h4><p>优秀的跨文化沟通与英语业务执行素养</p></div>
+        <div class="identity-card"><h4>内容洞察</h4><p>从持续内容创作与社群交流中观察真实问题。</p></div>
+        <div class="identity-card"><h4>产品实践</h4><p>以信息架构、界面与快速原型把想法做成可用产品。</p></div>
+        <div class="identity-card"><h4>视觉表达</h4><p>用摄影作品与内容叙事建立可感知的产品与品牌体验。</p></div>
       </div>
     </div>
   </div>
 </section>
-<section id="projects">
+<section id="lens-notes" class="lens-case featured-case">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 — FEATURED CASE</span>
+      <h2 class="section-title">Lens Notes｜清禾影迹</h2>
+      <p class="case-study-sub">Independent Product · 0→1 · 2026</p>
+      <div class="lens-live-heading">
+        <a class="lens-live-cta" href="https://lensnotes.cn" target="_blank" rel="noopener noreferrer">访问 Lens Notes ↗</a>
+        <span class="lens-live-domain">lensnotes.cn</span>
+      </div>
+    </div>
+    <div class="lens-intro">
+      <p class="lens-description">从摄影内容创作中发现真实的信息检索与拍摄决策需求，独立设计并构建 Lens Notes，将地点、真实样片、器材与拍摄参数组织为可浏览、可参考的摄影信息产品。</p>
+      <p class="lens-prompt">去哪拍<br>用什么拍<br>怎么拍</p>
+    </div>
+    <div class="lens-stat-grid">
+      <div class="lens-stat"><span class="num">0 → 1</span><span class="lbl">产品从定义到上线</span></div>
+      <div class="lens-stat"><span class="num">1000+</span><span class="lbl">发布后 5 天匿名访问</span></div>
+      <div class="lens-stat"><span class="num">400+</span><span class="lbl">发布后 5 天社群新增</span></div>
+    </div>
+    <div class="lens-product-visual" aria-label="Lens Notes 产品视觉展示">
+      <figure class="lens-product-overview">
+        <button class="lens-product-image-button" type="button" onclick="openLightbox('lensnotes', 0)" aria-label="查看 Lens Notes 产品概览完整图片">
+          <img src="images/lensnotes-product-overview.jpg" alt="Lens Notes 产品整体概览">
+        </button>
+        <figcaption><span>PRODUCT OVERVIEW</span><p>将分散的摄影样片、地点、器材与拍摄参数组织成可浏览、可检索的摄影参考系统。</p></figcaption>
+      </figure>
+      <div class="lens-mechanisms">
+        <article class="lens-mechanism">
+          <button class="lens-mechanism-image" type="button" onclick="openLightbox('lensnotes', 3)" aria-label="查看照片详情与参数完整图片">
+            <img src="images/lensnotes-photo-detail.jpg" alt="Lens Notes 单张照片详情与拍摄参数">
+          </button>
+          <div><span>PHOTO → PARAMETER</span><p>从单张作品查看器材、曝光与色彩设置，并生成参数分享卡。</p></div>
+        </article>
+        <article class="lens-mechanism">
+          <button class="lens-mechanism-image" type="button" onclick="openLightbox('lensnotes', 4)" aria-label="查看 JPG 上传与摄影记录工作流完整图片">
+            <img src="images/lensnotes-card-workflow.jpg" alt="Lens Notes JPG 上传、EXIF 读取与摄影记录工作流">
+          </button>
+          <div><span>UPLOAD → RECORD</span><p>上传 Olympus / OM System JPG，读取 EXIF 并生成个人摄影记录。</p></div>
+        </article>
+      </div>
+    </div>
+    <div class="lens-process">
+      <article class="lens-process-step"><span class="lens-process-index">01</span><span class="lens-process-label">INSIGHT</span><p>从摄影内容与社群反馈中识别用户在地点、样片、器材与参数参考上的信息分散问题。</p></article>
+      <article class="lens-process-step"><span class="lens-process-index">02</span><span class="lens-process-label">BUILD</span><p>完成产品定位、信息架构、界面与交互、内容资产组织，并通过 AI-assisted development 实现产品；覆盖地点、真实样片、器材关联、EXIF 与 JPG 参数卡工具。</p></article>
+      <article class="lens-process-step"><span class="lens-process-index">03</span><span class="lens-process-label">LAUNCH</span><p>通过已有摄影内容账号完成首轮冷启动，发布后 5 天获得 1000+ 匿名访问与 400+ 社群新增。</p></article>
+      <article class="lens-process-step"><span class="lens-process-index">04</span><span class="lens-process-label">LEARN</span><p>通过匿名行为数据、产品漏斗、社群反馈、用户投票与实际使用问题判断迭代优先级。</p></article>
+    </div>
+    <div class="lens-inventory lens-inventory-secondary" aria-label="当前产品内容规模"><span>17 城市</span><span>48 地点</span><span>256 照片</span><span>9 镜头</span></div>
+    <p class="lens-live-footer"><a href="https://lensnotes.cn" target="_blank" rel="noopener noreferrer">View Live Product — lensnotes.cn ↗</a></p>
+  </div>
+</section>
+<section id="content" class="content-case featured-case">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:30px;">
+      <span class="case-study-tag">02 — FEATURED CASE</span>
+      <h2 class="case-study-title">清禾在野｜Content &amp; Growth</h2>
+      <p class="case-study-sub">个人摄影内容品牌的内容运营、视觉制作与用户连接实践。</p>
+    </div>
+
+    <div class="growth-overview">
+      <div class="growth-stat"><div class="num">5,527</div><div class="lbl">小红书粉丝 · 截至 2026.09</div></div>
+      <div class="growth-stat"><div class="num">2,218</div><div class="lbl">抖音粉丝 · 截至 2026.09</div></div>
+      <div class="growth-stat"><div class="num">240万+</div><div class="lbl">累计内容曝光</div></div>
+      <div class="growth-stat"><div class="num">29万+</div><div class="lbl">单篇最高曝光</div></div>
+    </div>
+
+    <div class="section-header" style="margin-bottom:24px;">
+      <span class="case-study-tag">Content Strategy</span>
+      <h2 class="case-study-title" style="font-size:1.5rem;">四个内容支柱</h2>
+    </div>
+    <div class="strategy-grid">
+      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/6a2eae3b108f000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784811994&share_id=cf824b6ae4854ff481aaad7447e74a45" target="_blank">
+        <span class="en">Content Education</span><h4>用户教育型内容</h4>
+        <p>摄影参数、设备使用与拍摄技巧，帮助用户解决明确的问题。</p>
+        <p class="val">小红书教程合集 →</p>
+      </a>
+      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/69c4e096020a000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784812013&share_id=373d3a0053094d10bb3940768e402d61" target="_blank">
+        <span class="en">Visual Storytelling</span><h4>视觉叙事内容</h4>
+        <p>原图直出、旅行与城市记录，沉淀持续的视觉表达。</p>
+        <p class="val">小红书直出合集 →</p>
+      </a>
+      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/69cf596c0204000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784812030&share_id=da82d5b636d34b568a910563d6e62d8f" target="_blank">
+        <span class="en">Product Experience</span><h4>产品体验与商业内容</h4>
+        <p>围绕器材、配件与真实拍摄场景的使用体验。</p>
+        <p class="val">小红书分享合集 →</p>
+      </a>
+      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/69d0dd6001f6000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784812037&share_id=de7c6640608b43658a5729a6d87c5ee3" target="_blank">
+        <span class="en">Personal Narrative</span><h4>个人叙事与生活方式内容</h4>
+        <p>人像、日常与生活方式记录，丰富人与内容的连接。</p>
+        <p class="val">小红书人像合集 →</p>
+      </a>
+    </div>
+
+    <div class="section-header" style="margin-bottom:24px;">
+      <span class="case-study-tag">Featured Content</span>
+      <h2 class="case-study-title" style="font-size:1.5rem;">爆款内容案例</h2>
+    </div>
+
+    <div class="featured-grid representative-grid">
+      <div class="featured-card"><div class="featured-thumb"><img src="images/xhs-1.jpg" alt="小红书摄影教程案例"></div><div class="featured-body"><h4>为什么你的奥林巴斯拍出来又糊又脏？</h4><div class="featured-meta"><b>29.2万</b> 曝光 · 赞3,717 藏2,985 评128<br><span class="highlight-rate">用户教育内容</span></div><a href="https://www.xiaohongshu.com/explore/6a045a3f0000000036003d9a?xsec_token=ABxiwiTgdAOdvi7f9DGW1Xdqoe2vdMMywK-h6l76JE8zc=&xsec_source=pc_user" target="_blank" class="featured-link">查看内容 →</a></div></div>
+      <div class="featured-card"><div class="featured-thumb"><img src="images/douyin-3.jpg" alt="抖音摄影视觉案例"></div><div class="featured-body"><h4>💧奥林巴斯原图直出</h4><div class="featured-meta"><b>10.6万</b> 播放 · 赞3,117 藏725 评99 转329<br><span class="highlight-rate">摄影视觉内容</span></div><a href="https://v.douyin.com/vEgL9KkNuYE/" target="_blank" class="featured-link">查看视频 →</a></div></div>
+      <div class="featured-card"><div class="featured-thumb"><img src="images/xhs-4.jpg" alt="小红书器材体验案例"></div><div class="featured-body"><h4>奥林巴斯镜头选购指南｜新手别乱买（附样片）</h4><div class="featured-meta"><b>6.8万</b> 曝光 · 赞1,048 藏976 评157<br><span class="highlight-rate">产品体验内容</span></div><a href="https://www.xiaohongshu.com/user/profile/69ae93fb000000003302700b?m_source=pwa" target="_blank" class="featured-link">查看内容 →</a></div></div>
+      <div class="featured-card"><div class="featured-thumb"><img src="images/douyin-1.jpg" alt="抖音摄影教程案例"></div><div class="featured-body"><h4>奥林巴斯为什么一按快门就黑屏/糊片</h4><div class="featured-meta"><b>18.1万</b> 播放 · 赞7,370 藏3,604 评107 转633<br><span class="highlight-rate">代表性高表现内容</span></div><a href="https://v.douyin.com/vEgL9KkNuYE/" target="_blank" class="featured-link">查看视频 →</a></div></div>
+    </div>
+    <div class="content-commercial-note"><span class="case-study-tag">Commercial / Brand capability</span><p>内容实践也延伸至影像器材、摄影配件、艺术展览与酒店文旅合作，围绕真实使用场景完成内容与视觉表达。</p><a href="#collab">查看品牌合作 →</a></div>
+    <div class="content-product-note"><strong>CONTENT → PRODUCT</strong><br>长期积累的摄影内容、用户反馈与受众信任，成为 Lens Notes 的需求来源与首轮冷启动基础。产品讲解内容发布后进一步带来：1000+ 匿名访问 / 400+ Lens Notes 社群新增。</div>
+  </div>
+</section>
+<section id="projects" class="support-section">
 
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">Project Experience</span>
-      <h2 class="section-title">项目管理与交付</h2>
+      <span class="section-tag">Selected Projects</span>
+      <h2 class="section-title">精选项目</h2>
     </div>
 
  <div class="projects-grid">
-      <!-- 🌟 FDE 核心亮点项目：AI 个人作品集与数字交付系统 -->
-      <div class="project-card">
-        <div class="project-header">
-          <h3 class="project-title">AI-Assisted Personal Portfolio & Digital Hub ｜ 个人数字作品集与交付系统</h3>
-          <span class="project-meta">Full-Stack Agent & Vibe Coding Delivery</span>
-        </div>
-        <div class="project-metrics">
-          <div class="project-metric-item"><span>0 → 1</span> 独立主导架构设计</div>
-          <div class="project-metric-item"><span>AI Agent 协同</span> 现代前端工程交付</div>
-          <div class="project-metric-item"><span>可交互 Demo</span> 全链路闭环落地</div>
-        </div>
-        <p class="project-desc"><strong>需求拆解与架构设计：</strong>基于个人职业转型与数字化定位，独立完成从业务场景分析、板块重构到前端原型实现的全链路方案设计。</p>
-        <p class="project-desc"><strong>AI 协同与工程实践：</strong>深度应用前沿 AI 工具链与 Agent 协同工作流，高效打通逻辑链路与可视化交互，在极短周期内完成多版本迭代、交互优化与生产环境部署。</p>
-        <p class="project-desc"><strong>核心交付价值：</strong>向业务方与面试官直观展示了将复杂需求转化为高品质可交互数字资产的动手落地能力（Hands-on）与敏捷迭代思维。</p>
-      </div>
-
       <!-- 教育部产学合作项目（对齐方案设计、多维资产交付与跨团队协同） -->
       <div class="project-card">
         <div class="project-header">
@@ -587,169 +734,11 @@ footer p{font-size:.76rem;color:var(--text-dim);}
         <p class="project-desc"><strong>项目统筹与成果闭环：</strong>把控项目里程碑与多维交付标准，实现高质高效结项，成功将项目成果转化为具备实际应用场景的标杆数字资产。</p>
       </div>
     </div>
-    </section>
-<section id="content">
-  <div class="container">
-    <div class="section-header" style="margin-bottom:30px;">
-      <span class="case-study-tag">Content Growth Case Study</span>
-      <h2 class="case-study-title">清禾在野 · Qinghe Wandering</h2>
-      <p class="case-study-sub">个人摄影内容品牌 0-1 增长案例｜独立完成账号定位、内容策略、视觉制作、数据分析及品牌合作闭环。</p>
-    </div>
-
-    <div class="growth-overview">
-      <div class="growth-stat"><div class="num">0 → 3,900+</div><div class="lbl">小红书粉丝增长</div></div>
-      <div class="growth-stat"><div class="num">0 → 1,800+</div><div class="lbl">抖音粉丝增长</div></div>
-      <div class="growth-stat"><div class="num">240万+</div><div class="lbl">累计内容曝光</div></div>
-      <div class="growth-stat"><div class="num">29万+</div><div class="lbl">单篇最高曝光</div></div>
-    </div>
-
-    <div class="section-header" style="margin-bottom:24px;">
-      <span class="case-study-tag">Content Strategy</span>
-      <h2 class="case-study-title" style="font-size:1.5rem;">内容策略矩阵</h2>
-    </div>
-    <div class="strategy-grid">
-      <div class="strategy-card">
-        <span class="en">Content Education</span><h4>教程干货</h4>
-        <p>摄影参数、设备使用、拍摄技巧、后期方法。</p>
-        <p class="val">通过高收藏内容吸引精准用户，提高粉丝粘性与账号长期价值。</p>
-      </div>
-      <div class="strategy-card">
-        <span class="en">Visual Storytelling</span><h4>视觉作品</h4>
-        <p>摄影作品、旅行影像、扫街记录。</p>
-        <p class="val">建立个人视觉风格，提升账号审美与品牌调性。</p>
-      </div>
-      <div class="strategy-card">
-        <span class="en">Product Marketing</span><h4>产品种草</h4>
-        <p>摄影器材、配件真实体验。</p>
-        <p class="val">连接用户需求与品牌产品，实现商业合作转化。</p>
-      </div>
-      <div class="strategy-card">
-        <span class="en">Lifestyle Marketing</span><h4>场景内容</h4>
-        <p>旅行、展览、酒店、城市探索。</p>
-        <p class="val">通过场景化内容帮助品牌完成故事表达。</p>
-      </div>
-    </div>
-
-    <div class="section-header" style="margin-bottom:24px;">
-      <span class="case-study-tag">Featured Content</span>
-      <h2 class="case-study-title" style="font-size:1.5rem;">爆款内容案例</h2>
-    </div>
-
-    <p style="font-size:.82rem;font-weight:500;color:var(--accent);margin:6px 0 12px;">小红书精选</p>
-    <div class="featured-grid">
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/xhs-1.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>为什么你的奥林巴斯拍出来又糊又脏？</h4>
-          <div class="featured-meta"><b>29.2万</b> 曝光 · 赞3,717 藏2,985 评128<br><span class="highlight-rate">互动率 2.3%</span></div>
-          <a href="https://www.xiaohongshu.com/explore/6a045a3f0000000036003d9a?xsec_token=ABxiwiTgdAOdvi7f9DGW1Xdqoe2vdMMywK-h6l76JE8zc=&xsec_source=pc_user" target="_blank" class="featured-link">查看内容 →</a>
-        </div>
-      </div>
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/xhs-2.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>奥林巴斯原图直出粉白皮教程！（Ep7）</h4>
-          <div class="featured-meta"><b>13.8万</b> 曝光 · 赞2,614 藏2,683 评139<br><span class="highlight-rate">互动率 3.9%</span></div>
-          <a href="https://www.xiaohongshu.com/user/profile/69ae93fb000000003302700b?m_source=pwa" target="_blank" class="featured-link">查看内容 →</a>
-        </div>
-      </div>
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/xhs-3.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>奥林巴斯如何拍出层次感</h4>
-          <div class="featured-meta"><b>12.4万</b> 曝光 · 赞1,869 藏1,579 评71<br><span class="highlight-rate">互动率 2.8%</span></div>
-          <a href="https://www.xiaohongshu.com/user/profile/69ae93fb000000003302700b?m_source=pwa" target="_blank" class="featured-link">查看内容 →</a>
-        </div>
-      </div>
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/xhs-4.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1542744094-24638f2888fa?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>奥林巴斯镜头选购指南｜新手别乱买（附样片）</h4>
-          <div class="featured-meta"><b>6.8万</b> 曝光 · 赞1,048 藏976 评157<br><span class="highlight-rate">互动率 3.2%</span></div>
-          <a href="https://www.xiaohongshu.com/user/profile/69ae93fb000000003302700b?m_source=pwa" target="_blank" class="featured-link">查看内容 →</a>
-        </div>
-      </div>
-    </div>
-
-    <p style="font-size:.82rem;font-weight:500;color:var(--accent);margin:6px 0 12px;">抖音精选</p>
-    <div class="featured-grid">
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/douyin-1.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1606986628253-0562253a6e0d?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>奥林巴斯为什么一按快门就黑屏/糊片</h4>
-          <div class="featured-meta"><b>18.1万</b> 播放 · 赞7,370 藏3,604 评107 转633<br><span class="highlight-rate">互动率 6.4%</span></div>
-          <a href="https://v.douyin.com/vEgL9KkNuYE/" target="_blank" class="featured-link">查看视频 →</a>
-        </div>
-      </div>
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/douyin-2.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>奥林巴斯如何拍出胶片感｜直出参数思路</h4>
-          <div class="featured-meta"><b>12.7万</b> 播放 · 赞271 藏130 评33 转23<br><span class="highlight-rate">互动率 3.6%</span></div>
-          <a href="https://v.douyin.com/vEgL9KkNuYE/" target="_blank" class="featured-link">查看视频 →</a>
-        </div>
-      </div>
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/douyin-3.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>💧奥林巴斯原图直出</h4>
-          <div class="featured-meta"><b>10.6万</b> 播放 · 赞3,117 藏725 评99 转329<br><span class="highlight-rate">互动率 4.0%</span></div>
-          <a href="https://v.douyin.com/vEgL9KkNuYE/" target="_blank" class="featured-link">查看视频 →</a>
-        </div>
-      </div>
-      <div class="featured-card">
-        <div class="featured-thumb">
-          <img src="images/douyin-4.jpg" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=800&q=80'">
-        </div>
-        <div class="featured-body">
-          <h4>奥林巴斯镜头选购指南｜新手别乱买</h4>
-          <div class="featured-meta"><b>1.9万</b> 播放 · 赞590 藏361 评121 转37<br><span class="highlight-rate">互动率 5.7%</span></div>
-          <a href="https://v.douyin.com/vEgL9KkNuYE/" target="_blank" class="featured-link">查看视频 →</a>
-        </div>
-      </div>
-    </div>
-
-    <p style="font-size:.82rem;font-weight:500;color:var(--accent);margin:10px 0 12px;">小红书内容合集体系（4 大内容支柱）</p>
-    <div class="strategy-grid">
-      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/6a2eae3b108f000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784811994&share_id=cf824b6ae4854ff481aaad7447e74a45" target="_blank">
-        <span class="en">Content Education</span><h4>📒 教程合集 · 8 篇</h4>
-        <p>奥林巴斯参数/黑屏/对焦/层次感等小白摄影教程。</p>
-        <p class="val">高收藏、高涨粉，账号精准用户基本盘 →</p>
-      </a>
-      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/69c4e096020a000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784812013&share_id=373d3a0053094d10bb3940768e402d61" target="_blank">
-        <span class="en">Visual Storytelling</span><h4>🦋 直出合集 · 28 篇</h4>
-        <p>奥林巴斯原图直出、旅行探店、色彩情绪记录。</p>
-        <p class="val">建立清禾在野视觉调性，承接品牌审美合作 →</p>
-      </a>
-      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/69cf596c0204000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784812030&share_id=da82d5b636d34b568a910563d6e62d8f" target="_blank">
-        <span class="en">Product & Lifestyle</span><h4>🍃 分享合集 · 9 篇</h4>
-        <p>镜头配件、相机包、翻包、探展与场景化体验。</p>
-        <p class="val">连接器材品牌与真实使用场景，商单转化入口 →</p>
-      </a>
-      <a class="strategy-card" href="https://www.xiaohongshu.com/collection/item/69d0dd6001f6000000000001?xhsshare=CopyLink&appuid=69ae93fb000000003302700b&apptime=1784812037&share_id=de7c6640608b43658a5729a6d87c5ee3" target="_blank">
-        <span class="en">Portrait & People</span><h4>🌷 人像合集 · 5 篇</h4>
-        <p>自拍人像、家庭记录、不发黄肤色与粉白皮思路。</p>
-        <p class="val">建立人像内容板块，丰富账号内容多样性 →</p>
-      </a>
-    </div>
+    <p class="project-desc">This portfolio was independently designed and built with an AI-assisted workflow.</p>
   </div>
 </section>
 
-<section id="collab">
+<section id="collab" class="support-section">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Brand Partnership</span>
@@ -786,7 +775,7 @@ footer p{font-size:.76rem;color:var(--text-dim);}
     </div>
   </div>
 </section>
-<section id="photography">
+<section id="photography" class="support-section">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Visual Portfolio</span>
@@ -808,7 +797,7 @@ footer p{font-size:.76rem;color:var(--text-dim);}
     </div>
   </div>
 </section>
- <section id="journey">
+ <section id="journey" class="support-section">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Professional Journey</span>
@@ -855,7 +844,7 @@ footer p{font-size:.76rem;color:var(--text-dim);}
     </div>
   </div>  
 </section>
-<section id="contact" style="border-bottom: none;">
+<section id="contact" class="support-section" style="border-bottom: none;">
   <div class="container">
     <div class="contact-content">
       <span class="section-tag">Get in Touch</span>
@@ -873,17 +862,8 @@ footer p{font-size:.76rem;color:var(--text-dim);}
 </section>
 
 <footer>
-  <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-    <!-- 底部技术架构说明 -->
-    <div style="font-size: 0.78rem; color: var(--text-dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center;">
-      <span>// 站点架构</span>
-      <span style="color: var(--border);">·</span>
-      <span>基于 <strong>VS Code</strong> 与 <strong>CSS</strong> 独立构建</span>
-      <span style="color: var(--border);">·</span>
-      <span style="color: var(--accent); background: var(--accent-light); padding: 1px 6px; border-radius: 4px; font-family: monospace; font-size: 0.74rem; font-weight: 500;">Vibe Coding 驱动</span>
-    </div>
-    <!-- 完美对应首屏的专业定位与版权信息 -->
-    <p>&copy; 2026 Li Mengxin. Content Marketing, Digital Growth & FDE Solution Delivery.</p>
+  <div class="container">
+    <p>&copy; 2026 Li Mengxin. Content × Product × AI.</p>
   </div>
 </footer>
 
@@ -953,6 +933,16 @@ window.addEventListener('DOMContentLoaded', initAvatarLoader);
 
 /* ---- 画板图库数据配置 ---- */
 const galleryData = {
+  lensnotes: [
+    { url: 'images/lensnotes-product-overview.jpg', title: 'Lens Notes｜Product Overview' },
+    { url: 'images/lensnotes-city-place.jpg', title: 'Lens Notes｜City & Place' },
+    { url: 'images/lensnotes-browse-dimensions.jpg', title: 'Lens Notes｜Browse Dimensions' },
+    { url: 'images/lensnotes-photo-detail.jpg', title: 'Lens Notes｜PHOTO → PARAMETER' },
+    { url: 'images/lensnotes-card-workflow.jpg', title: 'Lens Notes｜UPLOAD → RECORD' },
+    { url: 'images/lensnotes-card-showcase.jpg', title: 'Lens Notes｜Card Showcase' },
+    { url: 'images/lensnotes-notes-tutorial.jpg', title: 'Lens Notes｜Notes Tutorial' },
+    { url: 'images/lensnotes-beta-recruitment.jpg', title: 'Lens Notes｜Beta Recruitment' }
+  ],
   portrait: [
     { url: 'images/portrait-1.jpg', title: '' },
     { url: 'images/portrait-2.jpg', title: '' },
@@ -991,11 +981,11 @@ let currentCategory = [];
 let currentIndex = 0;
 
 /* 打开灯箱 */
-function openLightbox(categoryKey) {
+function openLightbox(categoryKey, startIndex = 0) {
   currentCategory = galleryData[categoryKey];
   if (!currentCategory || currentCategory.length === 0) return;
   
-  currentIndex = 0;
+  currentIndex = Math.min(Math.max(startIndex, 0), currentCategory.length - 1);
   const lightbox = document.getElementById('gallery-lightbox');
   lightbox.style.display = 'flex';
   setTimeout(() => lightbox.classList.add('active'), 10);
@@ -1055,7 +1045,7 @@ function generateThumbnails() {
   currentCategory.forEach((item, index) => {
     const img = document.createElement('img');
     img.src = item.url;
-    img.className = 'thumb-img' + (index === 0 ? ' active' : '');
+    img.className = 'thumb-img' + (index === currentIndex ? ' active' : '');
     img.onclick = () => goToImage(index);
     container.appendChild(img);
   });
